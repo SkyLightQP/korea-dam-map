@@ -1,36 +1,26 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# korea-dam-map
 
-## Getting Started
+> 대한민국 댐 지도 및 주변 수위 경보
 
-First, run the development server:
+<div align="center">
+<br/>
+<img src="./docs/preview.png" width="80%">
+</div>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 시작하기
+
+- 네이버 지도 사용을 위해 [Ncloud Maps](https://www.ncloud.com/product/applicationservice/maps)에서 API 키를 발급받아야 합니다.
+- 국내 다목적 댐 정보를 가져오기 위해 [공공데이터포털](https://www.data.go.kr/data/15099049/openapi.do)에서 API 키를 발급받아야 합니다.
+
+```shell
+$ pnpm install 
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 환경변수
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- [`.env.example`](./.env.example) 파일을 참고하세요.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+| Key                        | Description |
+|----------------------------|-------------|
+| `NEXT_PUBLIC_NAVER_MAP_CLIENT_KEY` | 네이버 지도 Client Key (브라우저 공개 변수) |
+| `OPENAPI_SERVICE_KEY` | 공공데이터포털 OpenAPI Key (Server-Side 변수) |
