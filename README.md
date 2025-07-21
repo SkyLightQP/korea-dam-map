@@ -1,11 +1,12 @@
 # korea-dam-map (WIP)  [![CodeFactor](https://www.codefactor.io/repository/github/skylightqp/korea-dam-map/badge)](https://www.codefactor.io/repository/github/skylightqp/korea-dam-map) ![Next JS](https://img.shields.io/badge/Next-black?logo=next.js&logoColor=white)
 
-> 대한민국 댐 지도 및 주변 수위 경보
+**💧 대한민국 댐 지도 및 주변 수위 경보: 댐 수문 개방과 인근 하천 정보로 장마 등 기후 재난를 예방합니다.**
 
 <div align="center">
 <br/>
 <img src="./docs/preview.png" width="80%">
 </div>
+
 
 ## 시작하기
 
